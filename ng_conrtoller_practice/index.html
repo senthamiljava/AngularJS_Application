@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>ng-controller practice</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body ng-controller="myController">
+	First Name<input type="text" name="firstName" ng-model="name1"></br>
+    Last Name<input type="text" name="lastName" ng-model="name2"></br>
+    Full Name : {{fullName()}}
+
+    <br>
+    <br>
+    <br>
+    <div ng-controller="list">
+    <h5> List of canditade </h5>
+    <p ng-repeat="x in person">{{x.firstName+" "+x.lastName+" "+" from "+" "+x.city}}</p>
+    </div>
+</body>
+</html>

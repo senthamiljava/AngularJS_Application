@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>filter practice</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body ng-controller="myController">
+<p>List For Array</p>
+<p ng-repeat="x in name|filter:'e'">{{x}}</p>
+<br>
+<br>
+<br>
+<div ng-controller="personController">
+<p >List of Object</p>
+<p ng-repeat="x in person|filter:'a'">{{x}}</p>
+
+<br>
+<br>
+
+Enter the name:<input type="text" ng-model="value">
+<p ng-repeat="x in person|filter:value">{{x.name}}</p>
+</div>
+</body>
+</html>

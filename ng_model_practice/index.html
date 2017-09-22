@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ng-model practice</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body>
+    <form name="myForm" ng-app>
+    Email<input type="email" name="myEmail">
+    <span ng-show="myForm.myEmail.$error.email">not valid email</span>
+    </form>
+</body>
+</html>
